@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+
+<style>
+  #nav{ width:100px; height:20px; margin:0 auto;}
+#nav ul{ list-style:none;margin: 0;padding: 0;}
+#nav ul li{  line-height:20px; text-align:center; position:relative;display: block}
+#nav ul li a{ text-decoration:none; color:#000; display:block;padding:0px 10px;}
+#nav ul li a:hover{ color:#FFF; background:#333;}
+#nav ul li ul{ position:absolute;display: none  }
+#nav ul li ul li{ float:none; line-height:30px; text-align:left;}
+#nav ul li ul li a{ width:100%;}
+#nav ul li ul li a:hover{ background-color:#06f;}
+#nav ul li:hover ul{ display:block;}
+</style>
+
+
+</head>
+
+<body id="nav">
+ <ul>
+<li><a href="receive.html"target="showframe">收件箱</a><br/></li>
+<li><a href="today.html"target="showframe">今天</a><br/></li>
+<li><a href="future.html"target="showframe">未来7天</a><br/></li>
+<li><a href="project.html"target="showframe">项目</a><br/></li>
+<li><a href="label.html"target="showframe">标签</a><br/>
+<ul>
+  <li><a>1</a></li>
+  <li><a>2</a></li>
+</ul>
+</li>
+<li><a href="filter.html"target="showframe">过滤器</a>
+  <ul>
+    <li><a>11</a></li>
+    <li><a>22</a></li>
+  </ul>
+</li>
+
+  </ul>
+</body>
+</html>
