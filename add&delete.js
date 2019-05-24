@@ -16,9 +16,12 @@ $(document).ready(function () {
     $("#add").click(function () {
         var data = $("#name").val();
         var key = "key"+counter;
-        data = "<li id='"+key+"' class='item'>"+data+"</li>";
+
+        data = "<li id='"+key+"' class='item'>"+data+"<button >"+"删除"+"</button>"+"</li>";
+        //data = "<li id='"+key+"' class='item'>"+data+"</li>";
         console.log(data);
         $(".todo").append(data);
+
 
 
          counter++;
@@ -28,7 +31,7 @@ $(document).ready(function () {
         location.reload();
     })
 
-    $(".item").dblclick(function (e) {
+    $(".item").click(function (e) {
          var athis=e.currentTarget.attributes[0].value;
         $("#"+athis).remove();
         localStorage.removeItem(athis);
